@@ -27,9 +27,7 @@ Code coverage report for your laravel project with SonarQube
 2. Install MYSQL
 
 
-3. Install SonarQube
-
-Create SonarQube database and user
+3. Install SonarQube : Create SonarQube database and user
 
 	 	CREATE DATABASE sonar CHARACTER SET utf8 COLLATE utf8_general_ci;
 	 	CREATE USER 'sonar' IDENTIFIED BY 'sonar';
@@ -108,7 +106,7 @@ Click on administration->configuration anc check php is available in installed t
 
 ## Securing SonarQube Installation
 
-### Change Password for Admin User
+Change Password for Admin User
 
     http://localhost:9000/sonar
     Click on Log In
