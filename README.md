@@ -7,13 +7,8 @@ Code coverage report for your laravel project with SonarQube
 ![Alt text](screenshot-2.png?raw=true "php Project 2")
 
 
-## Install Java
-
- java -version
-
-
 ## Check OS bit:
- 	uname -i
+ 		uname -i
 
 ## Prerequisite Installations for SonarQube
 
@@ -36,17 +31,15 @@ Code coverage report for your laravel project with SonarQube
 	 	FLUSH PRIVILEGES;
 
 
-3. Download & Unzip SonarQube Distribution
+	3.1 Download & Unzip SonarQube Distribution
 
 
 		wget http://dist.sonar.codehaus.org/sonarqube-${SONAR_VERSION}.zip
-
 		unzip sonarqube-${SONAR_VERSION}.zip
-
 		mv sonarqube-${SONAR_VERSION} /opt/sonar
 
 
- 4. Edit and Configure sonar.properties
+ 	3.2 Edit and Configure sonar.properties
 
  		sudo nano /opt/sonar/conf/sonar.properties
 		
@@ -58,13 +51,13 @@ Code coverage report for your laravel project with SonarQube
  		sonar.web.context=/sonar
  		sonar.web.port=9000
 
-5. Run SonarQube Server
+	3.3 Run SonarQube Server
 
 		sudo /opt/sonar/bin/linux-x86-32/sonar.sh start
 
 
 
-6. Install SonarQube Runner
+	3.4 Install SonarQube Runner
 
 		wget http://repo1.maven.org/maven2/org/codehaus/sonar/runner/sonar-runner-dist/2.4/sonar-runner-dist-${SONAR_RUNNER_VERSION}.zip
 
@@ -72,7 +65,7 @@ Code coverage report for your laravel project with SonarQube
 		mv sonar-runner-${SONAR_RUNNER_VERSION} /opt/sonar-runner
 
 
- 7. Edit and Configure sonar-runner.properties
+ 	3.5 Edit and Configure sonar-runner.properties
 
 		sudo  nano /opt/sonar-runner/conf/sonar-runner.properties
 		sonar.host.url=http://localhost:9000/sonar
