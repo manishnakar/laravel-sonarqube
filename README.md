@@ -32,13 +32,14 @@ Create SonarQube database and user
 	 	FLUSH PRIVILEGES;
 
 
-	3.1 Download & Unzip SonarQube Distribution
+
+3.1 Download & Unzip SonarQube Distribution
 
 		wget http://dist.sonar.codehaus.org/sonarqube-${SONAR_VERSION}.zip
 		unzip sonarqube-${SONAR_VERSION}.zip
 		mv sonarqube-${SONAR_VERSION} /opt/sonar
 
- 	3.2 Edit and Configure sonar.properties
+ 3.2 Edit and Configure sonar.properties
 
  		sudo nano /opt/sonar/conf/sonar.properties
 		
@@ -50,13 +51,13 @@ Create SonarQube database and user
  		sonar.web.context=/sonar
  		sonar.web.port=9000
 
-	3.3 Run SonarQube Server
+3.3 Run SonarQube Server
 
 		sudo /opt/sonar/bin/linux-x86-32/sonar.sh start
 
 
 
-	3.4 Install SonarQube Runner
+3.4 Install SonarQube Runner
 
 		wget http://repo1.maven.org/maven2/org/codehaus/sonar/runner/sonar-runner-dist/2.4/sonar-runner-dist-${SONAR_RUNNER_VERSION}.zip
 
@@ -64,7 +65,7 @@ Create SonarQube database and user
 		mv sonar-runner-${SONAR_RUNNER_VERSION} /opt/sonar-runner
 
 
- 	3.5 Edit and Configure sonar-runner.properties
+ 3.5 Edit and Configure sonar-runner.properties
 
 		sudo  nano /opt/sonar-runner/conf/sonar-runner.properties
 		sonar.host.url=http://localhost:9000/sonar
