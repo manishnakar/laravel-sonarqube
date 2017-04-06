@@ -50,8 +50,8 @@ Create SonarQube database and user
 
  4. Edit and Configure sonar.properties
 
- sudo nano /opt/sonar/conf/sonar.properties
-
+ 		sudo nano /opt/sonar/conf/sonar.properties
+		
  		sonar.jdbc.username=sonar
  		sonar.jdbc.password=sonar
  		sonar.jdbc.url=jdbc:mysql://localhost:3306/sonar?useUnicode=true&characterEncoding=utf8&rewriteBatchedStatements=true&useConfigs=maxPerformance
