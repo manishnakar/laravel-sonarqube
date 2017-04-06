@@ -5,4 +5,7 @@ php:
   - '7.1'
 script:
   # the following command line builds the project, runs the tests with coverage and then execute the SonarQube analysis
-  - mvn clean org.jacoco:jacoco-maven-plugin:prepare-agent install sonar:sonar
+  - mvn clean install sonar:sonar -Dsonar.host.url=https:/sonarqube.com -Dsonar.login=${27745073c9620192a328e02f0d73ce5ca24f1ca5}
+
+  
+  
