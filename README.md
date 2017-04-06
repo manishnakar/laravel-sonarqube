@@ -24,12 +24,12 @@ Code coverage report for your laravel project with SonarQube
 
 3. Install SonarQube : 
 Create SonarQube database and user
-
-	 	CREATE DATABASE sonar CHARACTER SET utf8 COLLATE utf8_general_ci;
-	 	CREATE USER 'sonar' IDENTIFIED BY 'sonar';
-	 	GRANT ALL ON sonar.* TO 'sonar'@'%' IDENTIFIED BY 'sonar';
-	 	GRANT ALL ON sonar.* TO 'sonar'@'localhost' IDENTIFIED BY 'sonar';
-	 	FLUSH PRIVILEGES;
+	
+		CREATE DATABASE sonar CHARACTER SET utf8 COLLATE utf8_general_ci;
+		CREATE USER 'sonar' IDENTIFIED BY 'sonar';
+		GRANT ALL ON sonar.* TO 'sonar'@'%' IDENTIFIED BY 'sonar';
+		GRANT ALL ON sonar.* TO 'sonar'@'localhost' IDENTIFIED BY 'sonar';
+		FLUSH PRIVILEGES;
 
 
 
@@ -41,14 +41,12 @@ Create SonarQube database and user
 
  3.2 Edit and Configure sonar.properties
 
- 		sudo nano /opt/sonar/conf/sonar.properties
-		
- 		sonar.jdbc.username=sonar
- 		sonar.jdbc.password=sonar
- 		sonar.jdbc.url=jdbc:mysql://localhost:3306/sonar?useUnicode=true&characterEncoding=utf8&rewriteBatchedStatements=true&useConfigs=maxPerformance
-
- 		sonar.web.host=127.0.0.1
- 		sonar.web.context=/sonar
+		sudo nano /opt/sonar/conf/sonar.properties
+		sonar.jdbc.username=sonar
+		sonar.jdbc.password=sonar
+		sonar.jdbc.url=jdbc:mysql://localhost:3306/sonar?useUnicode=true&characterEncoding=utf8&rewriteBatchedStatements=true&useConfigs=maxPerformance
+		sonar.web.host=127.0.0.1
+		sonar.web.context=/sonar
  		sonar.web.port=9000
 
 3.3 Run SonarQube Server
