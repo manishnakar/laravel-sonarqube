@@ -18,9 +18,10 @@ Code coverage report for your laravel project with SonarQube
 ## Prerequisite Installations for SonarQube
 
 1. Install JAVA JRE
-	sudo apt-get update
-	java -version — (check if java is not already installed)
-	sudo apt-get install default-jre
+	
+		sudo apt-get update
+		java -version — (check if java is not already installed)
+		sudo apt-get install default-jre
 
 
 2. Install MYSQL
@@ -40,11 +41,11 @@ Code coverage report for your laravel project with SonarQube
 3. Download & Unzip SonarQube Distribution
 
 
-	wget http://dist.sonar.codehaus.org/sonarqube-${SONAR_VERSION}.zip
+		wget http://dist.sonar.codehaus.org/sonarqube-${SONAR_VERSION}.zip
 
-	unzip sonarqube-${SONAR_VERSION}.zip
+		unzip sonarqube-${SONAR_VERSION}.zip
 
-	mv sonarqube-${SONAR_VERSION} /opt/sonar
+		mv sonarqube-${SONAR_VERSION} /opt/sonar
 
 
  4. Edit and Configure sonar.properties
@@ -61,7 +62,7 @@ Code coverage report for your laravel project with SonarQube
 
 5. Run SonarQube Server
 
-	sudo /opt/sonar/bin/linux-x86-32/sonar.sh start
+		sudo /opt/sonar/bin/linux-x86-32/sonar.sh start
 
 
 
