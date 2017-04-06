@@ -8,7 +8,6 @@ Code coverage report for your laravel project with SonarQube
 
 
 ## Check OS bit:
-	
 
  		uname -i
 
@@ -37,13 +36,11 @@ Create SonarQube database and user
 
 3.1 Download & Unzip SonarQube Distribution
 
-
 		wget http://dist.sonar.codehaus.org/sonarqube-${SONAR_VERSION}.zip
 		unzip sonarqube-${SONAR_VERSION}.zip
 		mv sonarqube-${SONAR_VERSION} /opt/sonar
 
  3.2 Edit and Configure sonar.properties
-
 
 		sudo nano /opt/sonar/conf/sonar.properties
 		sonar.jdbc.username=sonar
@@ -56,13 +53,11 @@ Create SonarQube database and user
 
 3.3 Run SonarQube Server
 
-
 		sudo /opt/sonar/bin/linux-x86-32/sonar.sh start
 
 
 
 3.4 Install SonarQube Runner
-
 
 		wget http://repo1.maven.org/maven2/org/codehaus/sonar/runner/sonar-runner-dist/2.4/sonar-runner-dist-${SONAR_RUNNER_VERSION}.zip
 
@@ -72,7 +67,6 @@ Create SonarQube database and user
 
 
  3.5 Edit and Configure sonar-runner.properties
-
 
 		sudo  nano /opt/sonar-runner/conf/sonar-runner.properties
 		sonar.host.url=http://localhost:9000/sonar
