@@ -100,6 +100,7 @@ Click on administration->configuration anc check php is available in installed t
 
 Run solar runner
 
+
  	sudo /opt/sonar-runner/bin/sonar-runner -e -X
 
 
@@ -107,6 +108,7 @@ Run solar runner
 ## Securing SonarQube Installation
 
 Change Password for Admin User
+
 
     	http://localhost:9000/sonar
     	Click on Log In
