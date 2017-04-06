@@ -3,15 +3,15 @@ Code coverage report for your laravel project with SonarQube
 
 
 
-#Install Java
+## Install Java
 
  java -version
 
 
-#Check OS bit:
- uname -i
+## Check OS bit:
+ 	uname -i
 
-#Prerequisite Installations for SonarQube :
+## Prerequisite Installations for SonarQube
 
 1. Install JAVA JRE
 	sudo apt-get update
@@ -63,15 +63,15 @@ Code coverage report for your laravel project with SonarQube
 
 6. Install SonarQube Runner
 
-	wget http://repo1.maven.org/maven2/org/codehaus/sonar/runner/sonar-runner-dist/2.4/sonar-runner-dist-${SONAR_RUNNER_VERSION}.zip
+		wget http://repo1.maven.org/maven2/org/codehaus/sonar/runner/sonar-runner-dist/2.4/sonar-runner-dist-${SONAR_RUNNER_VERSION}.zip
 
-	unzip sonar-runner-dist-${SONAR_RUNNER_VERSION}.zip
-	mv sonar-runner-${SONAR_RUNNER_VERSION} /opt/sonar-runner
+		unzip sonar-runner-dist-${SONAR_RUNNER_VERSION}.zip
+		mv sonar-runner-${SONAR_RUNNER_VERSION} /opt/sonar-runner
 
 
  7. Edit and Configure sonar-runner.properties
 
-	sudo  nano /opt/sonar-runner/conf/sonar-runner.properties
+		sudo  nano /opt/sonar-runner/conf/sonar-runner.properties
 		sonar.host.url=http://localhost:9000/sonar
 		sonar.jdbc.url=jdbc:mysql://localhost:3306/sonar?useUnicode=true&characterEncoding=utf8&rewriteBatchedStatements=true&useConfigs=maxPerformance
 
@@ -81,15 +81,15 @@ Code coverage report for your laravel project with SonarQube
 
 
 
-#Install PHP Plugin for SonarQube
+## Install PHP Plugin for SonarQube
 
 	Click on administration->configuration anc check php is available in installed tab, elase go to available tab and search for php and once found, click on install button. Once installed you need to restart the sonarqube.
 
 
 
-Configure with your Laravel project
+## Configure with your Laravel project
 
-Create a new file  "sonar-project.properties" in root folder of laravel project
+## Create a new file  "sonar-project.properties" in root folder of laravel project
 
 	# Required metadata
 	sonar.projectKey=testproject
@@ -116,13 +116,13 @@ Create a new file  "sonar-project.properties" in root folder of laravel project
 
 
 
-Now run following command
+## Now run following command
 
- sudo /opt/sonar-runner/bin/sonar-runner -e -X
+ 	sudo /opt/sonar-runner/bin/sonar-runner -e -X
 
 
 
-#Securing SonarQube Installation
+## Securing SonarQube Installation
 
 ## Change Password for Admin User
 
