@@ -94,30 +94,9 @@ Click on administration->configuration anc check php is available in installed t
 
 ## Configure with your Laravel project
 
-## Create a new file  "sonar-project.properties" in root folder of laravel project
+ Create a new file  [sonar-project.properties](sonar-project.properties) in root folder of laravel project.
 
-	# Required metadata
-	sonar.projectKey=testproject
-	sonar.projectName=testproject
-	sonar.projectVersion=1.0.0
-
-	# Path to the parent source code directory.
-	sonar.sources=app
-
-	# Language
-	# We've commented this out, because we want to analyse both PHP and Javascript
-	sonar.language=php
-
-	# Encoding of the source code
-	sonar.sourceEncoding=UTF-8
-
-	# Reusing PHPUnit reports
-	sonar.php.coverage.reportPath=ci/codeCoverage/codeCoverage.xml
-	sonar.php.tests.reportPath=ci/testResults.xml
-
-	# Here, you can exclude all the directories that you don't want to analyse.
-	# As an example, I'm excluding the Vendor directory
-	sonar.exclusions=vendor/**
+	
 
 
 
