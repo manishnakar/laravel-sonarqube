@@ -1,4 +1,4 @@
-# laravel-sonarqube
+# laravel sonarqube
 Code coverage report for your laravel project with SonarQube
 
 
@@ -29,7 +29,7 @@ Code coverage report for your laravel project with SonarQube
 
 3. Install SonarQube
 
-	 Create SonarQube database and user
+Create SonarQube database and user
 
 	 	CREATE DATABASE sonar CHARACTER SET utf8 COLLATE utf8_general_ci;
 	 	CREATE USER 'sonar' IDENTIFIED BY 'sonar';
@@ -50,7 +50,7 @@ Code coverage report for your laravel project with SonarQube
 
  4. Edit and Configure sonar.properties
 
- 	sudo nano /opt/sonar/conf/sonar.properties
+ sudo nano /opt/sonar/conf/sonar.properties
 
  		sonar.jdbc.username=sonar
  		sonar.jdbc.password=sonar
