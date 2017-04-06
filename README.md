@@ -38,7 +38,6 @@ Create SonarQube database and user
 		unzip sonarqube-${SONAR_VERSION}.zip
 		mv sonarqube-${SONAR_VERSION} /opt/sonar
 
-
  	3.2 Edit and Configure sonar.properties
 
  		sudo nano /opt/sonar/conf/sonar.properties
@@ -50,7 +49,6 @@ Create SonarQube database and user
  		sonar.web.host=127.0.0.1
  		sonar.web.context=/sonar
  		sonar.web.port=9000
-
 
 	3.3 Run SonarQube Server
 
