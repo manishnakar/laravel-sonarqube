@@ -2,6 +2,10 @@
 Code coverage report for your laravel project with SonarQube
 
 
+![Alt text](/blob/master/screenshot-1.png?raw=true "php Project 1")
+
+![Alt text](/blob/master/screenshot-2.png?raw=true "php Project 2")
+
 
 ## Install Java
 
