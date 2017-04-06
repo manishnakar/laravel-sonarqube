@@ -88,7 +88,7 @@ Code coverage report for your laravel project with SonarQube
 
 ## Install PHP Plugin for SonarQube
 
-	Click on administration->configuration anc check php is available in installed tab, elase go to available tab and search for php and once found, click on install button. Once installed you need to restart the sonarqube.
+Click on administration->configuration anc check php is available in installed tab, elase go to available tab and search for php and once found, click on install button. Once installed you need to restart the sonarqube.
 
 
 
@@ -129,7 +129,7 @@ Code coverage report for your laravel project with SonarQube
 
 ## Securing SonarQube Installation
 
-## Change Password for Admin User
+### Change Password for Admin User
 
     http://localhost:9000/sonar
     Click on Log In
