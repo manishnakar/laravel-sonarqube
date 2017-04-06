@@ -98,6 +98,8 @@ Click on administration->configuration anc check php is available in installed t
 
 ## Now run following command
 
+Run solar runner
+
  	sudo /opt/sonar-runner/bin/sonar-runner -e -X
 
 
@@ -106,8 +108,8 @@ Click on administration->configuration anc check php is available in installed t
 
 Change Password for Admin User
 
-    http://localhost:9000/sonar
-    Click on Log In
-    Login with credentials admin/admin.
-    After logging in Click on My Profile present as sub-menu under logged user name in top-right corner.
-    Change Password accordingly.
+    	http://localhost:9000/sonar
+    	Click on Log In
+    	Login with credentials admin/admin.
+    	After logging in Click on My Profile present as sub-menu under logged user name in top-right corner.
+    	Change Password accordingly.
