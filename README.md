@@ -129,4 +129,5 @@ Possible checks should be :
 1. Please check Java version
 2. PORT is blocked by other process
 3. remove /sonar from web API and try	
+4. error-500-during-sonar-runner   : try set GLOBAL max_allowed_packet=32M; on mysql
 	
