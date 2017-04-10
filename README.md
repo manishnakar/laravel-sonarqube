@@ -37,24 +37,6 @@ Create SonarQube database and user
 		CREATE USER 'sonar' IDENTIFIED BY 'sonar';
 		GRANT ALL ON sonar.* TO 'sonar'@'%' IDENTIFIED BY 'sonar';
 		GRANT ALL ON sonar.* TO 'sonar'@'localhost' IDENTIFIED BY 'sonar';
-		
-		
-		
-		
-		
-#Troubleshooting	
-
-You might face some problem while running sonar-runner on your project..
-Possible checks should be :
-
-1. Please check Java version
-2. PORT is blocked by other process
-3. remove /sonar from web API and try
-
-
-
-
-
 		FLUSH PRIVILEGES;
 
 
@@ -136,3 +118,15 @@ Change Password for Admin User
     	Login with credentials admin/admin.
     	After logging in Click on My Profile present as sub-menu under logged user name in top-right corner.
     	Change Password accordingly.
+	
+	
+	
+#Troubleshooting	
+
+You might face some problem while running sonar-runner on your project..
+Possible checks should be :
+
+1. Please check Java version
+2. PORT is blocked by other process
+3. remove /sonar from web API and try	
+	
